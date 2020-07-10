@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import LocationCard from './LocationCard'
 import LocationManager from '../../modules/LocationsManager'
 
-const LocationList = () => {
+const LocationList = (props) => {
     //intial empty array
     const [locations, setLocations] = useState([]);
 
@@ -26,13 +26,23 @@ const LocationList = () => {
 
     //map() iterates through array of locations and generates a new card for each
     return(
+        <>
+        <section className="section-content">
+            <button type="button"
+                className="btn"
+                onClick={() => {props.history.push("/locations/new")}}>
+                    Open New Location
+                </button>
+        </section>
         <div className="container-cards">
             {locations.map(location => 
                 <LocationCard 
                 key={location.id} 
                 location={location} 
-                deleteLocation={deleteLocation} />)}
+                deleteLocation={deleteLocation} />
+            )}
         </div>
+        </>
     );
 };
 

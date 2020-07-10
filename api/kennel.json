@@ -41,16 +41,16 @@
   ],
   "locations": [
     {
-      "id":1,
-      "name":"Pekin",
+      "id": 1,
+      "name": "Pekin",
       "address": "3231 East Bethlehem Church Road Pekin, IN",
-      "picture":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Fff%2FNew_Pekin%252C_Indiana.jpg%2F1200px-New_Pekin%252C_Indiana.jpg&f=1&nofb=1"
+      "picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Fff%2FNew_Pekin%252C_Indiana.jpg%2F1200px-New_Pekin%252C_Indiana.jpg&f=1&nofb=1"
     },
     {
-      "id":2,
-      "name":"Louisville",
+      "id": 2,
+      "name": "Louisville",
       "address": "4962 Winding Spring Circle Louisville, KY",
-      "picture":"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.thousandwonders.net%2FLouisville.original.12967.jpg&f=1&nofb=1"
+      "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.thousandwonders.net%2FLouisville.original.12967.jpg&f=1&nofb=1"
     },
     {
       "id": 3,

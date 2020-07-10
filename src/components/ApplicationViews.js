@@ -2,8 +2,10 @@ import { Route } from "react-router-dom";
 import React from "react";
 import Home from "./home/Home";
 import AnimalList from "./animal/AnimalList";
+import AnimalForm from './animal/AnimalForm';
 import AnimalDetail from "./animal/AnimalDetail"
 import LocationList from "./location/LocationList";
+import LocationForm from './location/LocationForm';
 import LocationDetail from "./location/LocationDetail";
 import EmployeeList from "./employee/EmployeeList";
 import OwnerList from "./owner/OwnerList";
@@ -23,14 +25,13 @@ const ApplicationViews = () => {
         exact
         path="/animals"
         render={props => {
-          return <AnimalList />;
+          return <AnimalList {...props}/>;
         }}
       />
 
-      <Route
+      <Route  
         path="/animals/:animalId(\d+)"
         render={props => {
-          // Pass the animalId to the AnimalDetailComponent
           return (
             <AnimalDetail
               animalId={parseInt(props.match.params.animalId)}
@@ -39,12 +40,16 @@ const ApplicationViews = () => {
            );
          }}
        />
+    
+      <Route path="/animals/new" render={(props) => {
+        return <AnimalForm {...props} />
+        }} />
 
         <Route
           exact
           path="/locations"
           render={props => {
-              return <LocationList />;
+              return <LocationList {...props} />;
           }}
         />
 
@@ -57,6 +62,11 @@ const ApplicationViews = () => {
               />
             );
           }}
+        />
+        
+        <Route path="/locations/new" render={(props) => {
+          return <LocationForm {...props} />
+          }} 
         />
 
         <Route
