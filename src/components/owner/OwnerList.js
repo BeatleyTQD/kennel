@@ -23,7 +23,11 @@ const OwnerList = () => {
     return(
         <div className="container-cards">
             {owners.map(owner =>
-                <OwnerCard key={owner.id} owner={owner} />)}
+                <OwnerCard 
+                    key={owner.id} 
+                    owner={owner}
+                    deleteOwner={deleteOwner}
+                    />)}
         </div>
     );
 };

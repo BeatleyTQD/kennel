@@ -1,21 +1,76 @@
 {
-    "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle", "picture":"https://www.backpacker.com/.image/t_share/MTU2Mzk0NDU5ODQ2NjgxOTAz/23158166954_7643010070_k.jpg"},
-        { "id": 2, "name": "Decker", "breed": "German Shepherd", "picture":"https://barkpost.com/wp-content/uploads/2014/06/DOG-2-superJumbo.jpg"},
-        { "id": 3, "name": "Esme", "breed": "Pitbull", "picture":"https://images.wagwalkingweb.com/media/articles/care/why-is-my-dog-yawning-and-licking-his-lips/why-is-my-dog-yawning-and-licking-his-lips.jpg"}
-    ],
-    "employees": [
-        { "id": 1, "name": "Julie", "hired":"1991", "picture":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg00.deviantart.net%2Febe7%2Fi%2F2017%2F172%2Fe%2F0%2Fjulie_the_hedgehog_by_naturetheartist-dbdikcv.jpg&f=1&nofb=1"},
-        { "id": 2, "name": "Justin", "hired":"2006", "picture":"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Forig07.deviantart.net%2F17b8%2Ff%2F2012%2F044%2F0%2F6%2Fjustin_the_hedgehog_by_sonicno1fanatic-d4pl7gb.png&f=1&nofb=1"},
-        { "id": 3, "name": "James", "hired":"2014", "picture":"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpictures.fanart-central.net%2Ft%2FTails2085%2F369595.png&f=1&nofb=1"}
-    ],
-    "locations": [
-        { "id":1, "name":"Louisville", "address":"4962 Winding Spring Circle Louisville, KY", "picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.fineartamerica.com%2Fimages%2Fartworkimages%2Fmediumlarge%2F1%2Flouisville-skyline-ii-steven-ainsworth.jpg&f=1&nofb=1"},
-        { "id":2, "name":"Pekin", "address":"3231 East Bethlehem Church Road Pekin, IN", "picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Fff%2FNew_Pekin%252C_Indiana.jpg%2F1200px-New_Pekin%252C_Indiana.jpg&f=1&nofb=1"},
-        { "id":3, "name":"Nashville", "address":"905 Miller Sawmill Road Nashville, TN", "picture":"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ftraveldigg.com%2Fwp-content%2Fuploads%2F2016%2F08%2FNashville-At-Night-Skyline.jpg&f=1&nofb=1"}
-    ],
-    "owners": [
-        { "id":1, "name":"Brenda Long", "position":"Founder and CEO", "picture":"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6c31aa7e-fcf0-4f5b-87bf-a2336c7cbb74/d6ptsz2-b28e37a9-e210-483d-ad0d-e6f729f95906.png/v1/fill/w_1024,h_491,q_80,strp/brenda_the_hedgehog_by_mariathehedgehog33_d6ptsz2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD00OTEiLCJwYXRoIjoiXC9mXC82YzMxYWE3ZS1mY2YwLTRmNWItODdiZi1hMjMzNmM3Y2JiNzRcL2Q2cHRzejItYjI4ZTM3YTktZTIxMC00ODNkLWFkMGQtZTZmNzI5Zjk1OTA2LnBuZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.cX3q4sVrDAWvr2x5QFtIwevoR-3E0IQEEZt-1v7Jq-4"},
-        { "id":2, "name":"Zaphod Beeblebrox", "position":"Co-Founder", "picture":"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fnerdist.com%2Fwp-content%2Fuploads%2F2017%2F06%2Fzaphod-beeblebrox-615x346.jpg&f=1&nofb=1"}
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle",
+      "picture": "https://www.backpacker.com/.image/t_share/MTU2Mzk0NDU5ODQ2NjgxOTAz/23158166954_7643010070_k.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Decker",
+      "breed": "German Shepherd",
+      "picture": "https://barkpost.com/wp-content/uploads/2014/06/DOG-2-superJumbo.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull",
+      "picture": "https://images.wagwalkingweb.com/media/articles/care/why-is-my-dog-yawning-and-licking-his-lips/why-is-my-dog-yawning-and-licking-his-lips.jpg"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Julie",
+      "hired": "1991",
+      "picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg00.deviantart.net%2Febe7%2Fi%2F2017%2F172%2Fe%2F0%2Fjulie_the_hedgehog_by_naturetheartist-dbdikcv.jpg&f=1&nofb=1"
+    },
+    {
+      "id": 2,
+      "name": "Justin",
+      "hired": "2006",
+      "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Forig07.deviantart.net%2F17b8%2Ff%2F2012%2F044%2F0%2F6%2Fjustin_the_hedgehog_by_sonicno1fanatic-d4pl7gb.png&f=1&nofb=1"
+    },
+    {
+      "id": 3,
+      "name": "James",
+      "hired": "2014",
+      "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpictures.fanart-central.net%2Ft%2FTails2085%2F369595.png&f=1&nofb=1"
+    }
+  ],
+  "locations": [
+    {
+      "id":1,
+      "name":"Pekin",
+      "address": "3231 East Bethlehem Church Road Pekin, IN",
+      "picture":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Fff%2FNew_Pekin%252C_Indiana.jpg%2F1200px-New_Pekin%252C_Indiana.jpg&f=1&nofb=1"
+    },
+    {
+      "id":2,
+      "name":"Louisville",
+      "address": "4962 Winding Spring Circle Louisville, KY",
+      "picture":"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.thousandwonders.net%2FLouisville.original.12967.jpg&f=1&nofb=1"
+    },
+    {
+      "id": 3,
+      "name": "Nashville",
+      "address": "905 Miller Sawmill Road Nashville, TN",
+      "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ftraveldigg.com%2Fwp-content%2Fuploads%2F2016%2F08%2FNashville-At-Night-Skyline.jpg&f=1&nofb=1"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Brenda Long",
+      "position": "Founder and CEO",
+      "picture": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6c31aa7e-fcf0-4f5b-87bf-a2336c7cbb74/d6ptsz2-b28e37a9-e210-483d-ad0d-e6f729f95906.png/v1/fill/w_1024,h_491,q_80,strp/brenda_the_hedgehog_by_mariathehedgehog33_d6ptsz2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD00OTEiLCJwYXRoIjoiXC9mXC82YzMxYWE3ZS1mY2YwLTRmNWItODdiZi1hMjMzNmM3Y2JiNzRcL2Q2cHRzejItYjI4ZTM3YTktZTIxMC00ODNkLWFkMGQtZTZmNzI5Zjk1OTA2LnBuZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.cX3q4sVrDAWvr2x5QFtIwevoR-3E0IQEEZt-1v7Jq-4"
+    },
+    {
+      "id": 2,
+      "name": "Zaphod Beeblebrox",
+      "position": "Co-Founder",
+      "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fnerdist.com%2Fwp-content%2Fuploads%2F2017%2F06%2Fzaphod-beeblebrox-615x346.jpg&f=1&nofb=1"
+    }
+  ]
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../animal/Animal.css"
 
 const AnimalCard = props => {
@@ -8,11 +9,14 @@ const AnimalCard = props => {
         <picture>
           <img src={props.animal.picture} alt="My Dog" />
         </picture>
-        <h3>Name: <span className="card-petname">
+        <h3><span className="card-petname">
           {props.animal.name}
         </span></h3>
-        <p>Breed: {props.animal.breed}</p>
+        <p>{props.animal.breed}</p>
         <button type="button" onClick={() => props.deleteAnimal(props.animal.id)}>Discharge</button>
+        <Link to={`/animals/${props.animal.id}`}>
+            <button>Details</button>
+        </Link>
       </div>
     </div>
   );
