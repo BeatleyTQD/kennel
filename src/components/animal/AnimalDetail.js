@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Redirect } from 'react-router-dom';
 import AnimalManager from '../../modules/AnimalManager';
 import './AnimalDetail.css'
 
@@ -27,20 +28,24 @@ const AnimalDetail = props => {
     );
   };
 
-  return (
-    <div className="card">
-      <div className="card-content">
-        <picture>
-          <img src={animal.picture} alt="My Dog" />
-        </picture>
-        <h3><span style={{ color: 'darkslategrey' }}>{animal.name}</span></h3>
-        <p>{animal.breed}</p>
-        <button type="button" disabled={isLoading} onClick={handleDelete}>
-          Discharge
-        </button>
+  if (animal.name !== undefined){
+    return (
+      <div className="card">
+        <div className="card-content">
+          <picture>
+            <img src={animal.picture} alt="My Dog" />
+          </picture>
+          <h3><span style={{ color: 'darkslategrey' }}>{animal.name}</span></h3>
+          <p>{animal.breed}</p>
+          <button type="button" disabled={isLoading} onClick={handleDelete}>
+            Discharge
+          </button>
+        </div>
       </div>
-    </div>
-  );
-}
+      )}
+     else {
+      return <Redirect to="/" />
+    }
+};
 
 export default AnimalDetail;

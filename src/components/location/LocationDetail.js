@@ -28,7 +28,7 @@ const LocationDetail = props => {
         <div className="card">
             <div className="card-content">
                 <picture>
-                    <img src={location.picture} alt="Location picture" />
+                    <img src={location.picture} alt="Location" />
                 </picture>
                 <h3><span style={{ color: 'darkslategrey' }}>{location.name}</span></h3>
                 <p>{location.address}</p>

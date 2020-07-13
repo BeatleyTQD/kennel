@@ -6,13 +6,14 @@ const LocationCard = props => {
     return (
         <div className="card">
             <div className="card-content">
-                <img src={props.location.picture} alt="City Skyline" />
+                <img src={props.locations.picture} alt="City Skyline" />
                 <h3>
-                    {props.location.name} <span className="card-locationname"></span>
+                    {props.locations.name} <span className="card-locationname"></span>
                 </h3>
-                <p>{props.location.address}</p>
-                <button type="button" onClick={() => props.deleteLocation(props.location.id)}>Close</button>
-                <Link to={`/locations/${props.location.id}`}>
+                <p>{props.locations.address}</p>
+                <button type="button" onClick={() => props.deleteLocation(props.locations.id)}>Close</button>
+                <button type="button" onClick={() => props.history.push(`/locations/${props.locations.id}/edit`)}>Edit</button>
+                <Link to={`/locations/${props.locations.id}`}>
                     <button>Details</button>
                 </Link>
             </div>

@@ -7,6 +7,16 @@ export default {
     getAll() {
         return fetch(`${remoteURL}/locations`).then(result => result.json())
     },
+    update(editedLocation) {
+        console.log("API update", editedLocation)
+        return fetch(`${remoteURL}/locations/${editedLocation.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(editedLocation)
+        }).then(data => data.json());
+    },
     post(newLocation) {
         return fetch(`${remoteURL}/locations`, {
             method: "POST",
