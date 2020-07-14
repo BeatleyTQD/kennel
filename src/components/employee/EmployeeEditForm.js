@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import LocationManager from "../../modules/LocationsManager";
 import EmployeeManager from "../../modules/EmployeeManager";
 
 const EmployeeEditForm = props => {
-    const [employee, setEmployee] = useState({name:"", hired: ""});
+    const [employee, setEmployee] = useState({name:"", hired: "", locationId: ""});
     const [isLoading, setIsLoading] = useState(false);
+    const [locations, setLocations] = useState([]);
 
     const handleFieldChange = evt => {
         const stateToChange = { ...employee };
@@ -19,7 +21,8 @@ const EmployeeEditForm = props => {
             id: props.match.params.employeeId,
             name: employee.name,
             hired: employee.hired,
-            picture: employee.picture
+            picture: employee.picture,
+            locationId: parseInt(employee.locationId)
         };
 
         EmployeeManager.update(editedEmployee)
@@ -29,6 +32,9 @@ const EmployeeEditForm = props => {
     useEffect(() => {
         EmployeeManager.get(props.match.params.employeeId)
             .then(employee => {
+                LocationManager.getAll().then(locations => {
+                    setLocations(locations)
+                })
                 setEmployee(employee);
                 setIsLoading(false);
             });
@@ -58,6 +64,18 @@ const EmployeeEditForm = props => {
                             value={employee.hired}
                         />
                         <label htmlFor="hired">Year Hired</label>
+                        <select 
+                            className="form-control"
+                            id="locationId"
+                            value={employee.locationId}
+                            onChange={handleFieldChange}
+                        >
+                            {locations.map(location => 
+                                <option key={location.id} value={location.id}>
+                                    {location.name}
+                                </option>
+                            )}
+                        </select>
                         </div>
                         <div className="alignRight">
                             <button

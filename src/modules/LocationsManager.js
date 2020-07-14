@@ -7,6 +7,10 @@ export default {
     getAll() {
         return fetch(`${remoteURL}/locations`).then(result => result.json())
     },
+    getWithEmployees(id) {
+        return fetch(`${remoteURL}/locations/${id}?_embed=employees`)
+                .then(result => result.json())
+    },
     update(editedLocation) {
         console.log("API update", editedLocation)
         return fetch(`${remoteURL}/locations/${editedLocation.id}`, {

@@ -8,9 +8,10 @@ import AnimalDetail from "./animal/AnimalDetail"
 import AnimalEditForm from "./animal/AnimalEditForm";
 import LocationList from "./location/LocationList";
 import LocationForm from './location/LocationForm';
-import LocationDetail from "./location/LocationDetail";
+import LocationWithEmployees from './location/LocationWithEmployees';
 import LocationEditForm from "./location/LocationEditForm"
 import EmployeeList from "./employee/EmployeeList";
+import EmployeeWithAnimals from "./employee/EmployeeWithAnimals";
 import EmployeeForm from "./employee/EmployeeForm";
 import EmployeeEditForm from "./employee/EmployeeEditForm";
 import OwnerList from "./owner/OwnerList";
@@ -67,6 +68,10 @@ const ApplicationViews = () => {
         return <AnimalForm {...props} />
         }} />
 
+
+
+
+      {/*LOCATIONS */}
         <Route
           exact
           path="/locations"
@@ -83,10 +88,7 @@ const ApplicationViews = () => {
           exact
           path="/locations/:locationId(\d+)" render={props => {
             return( 
-            <LocationDetail 
-              locationId={parseInt(props.match.params.locationId)}
-              {...props}
-              />
+            <LocationWithEmployees {...props} />
             );
           }}
         />
@@ -104,6 +106,10 @@ const ApplicationViews = () => {
           }} 
         />
 
+
+
+
+        {/*EMPLOYEES */}
         <Route
           exact
             path="/employees"
@@ -116,6 +122,10 @@ const ApplicationViews = () => {
           }}
         />
 
+        <Route path="/employees/:employeeId(\d+)/details" render={(props) => {
+          return <EmployeeWithAnimals {...props} />
+        }} />
+
         <Route exact path="/employees/new" render={(props) => {
           return <EmployeeForm {...props} />
         }} />
@@ -127,7 +137,12 @@ const ApplicationViews = () => {
             return <Redirect to="/logiin" />
           }
         }} />
+        
 
+
+
+
+        {/*OWNERS*/}
         <Route 
             exact
             path="/owners"

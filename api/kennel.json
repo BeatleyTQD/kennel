@@ -1,22 +1,18 @@
 {
   "animals": [
     {
-      "id": 1,
-      "name": "Doodles updatedsfdsfdsf",
-      "breed": "Poodledfjs",
-      "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-1uQRYMklACU%2FToQ6aL-5uUI%2FAAAAAAAAAgQ%2F9_u0922cL14%2Fs1600%2Fcute-puppy-dog-wallpapers.jpg&f=1&nofb=1"
-    },
-    {
-      "id": 2,
-      "name": "Deckersdfdfdsfdsf",
-      "breed": "German Shepherdsdf",
-      "picture": "https://barkpost.com/wp-content/uploads/2014/06/DOG-2-superJumbo.jpg"
-    },
-    {
       "id": 3,
-      "name": "Esmesdfsdfsfsf",
-      "breed": "Pitbullsdfsdfsdfsdf",
-      "picture": "https://images.wagwalkingweb.com/media/articles/care/why-is-my-dog-yawning-and-licking-his-lips/why-is-my-dog-yawning-and-licking-his-lips.jpg"
+      "name": "Esmes",
+      "breed": "Pitbull",
+      "picture": "https://images.wagwalkingweb.com/media/articles/care/why-is-my-dog-yawning-and-licking-his-lips/why-is-my-dog-yawning-and-licking-his-lips.jpg",
+      "employeeId": 2
+    },
+    {
+      "id": 4,
+      "name": "test",
+      "breed": "test",
+      "picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.indianaftermarket.com%2Fimages%2Finsert-dog-here%2FIMG_9211%25202.jpg&f=1&nofb=1",
+      "employeeId": 2
     }
   ],
   "employees": [
@@ -24,19 +20,29 @@
       "id": 1,
       "name": "Julie",
       "hired": "1991",
+      "locationId": 1,
       "picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg00.deviantart.net%2Febe7%2Fi%2F2017%2F172%2Fe%2F0%2Fjulie_the_hedgehog_by_naturetheartist-dbdikcv.jpg&f=1&nofb=1"
     },
     {
       "id": 2,
       "name": "Justin",
       "hired": "2006",
-      "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Forig07.deviantart.net%2F17b8%2Ff%2F2012%2F044%2F0%2F6%2Fjustin_the_hedgehog_by_sonicno1fanatic-d4pl7gb.png&f=1&nofb=1"
+      "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Forig07.deviantart.net%2F17b8%2Ff%2F2012%2F044%2F0%2F6%2Fjustin_the_hedgehog_by_sonicno1fanatic-d4pl7gb.png&f=1&nofb=1",
+      "locationId": 1
     },
     {
       "id": 3,
       "name": "James",
       "hired": "2014",
+      "locationId": 3,
       "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpictures.fanart-central.net%2Ft%2FTails2085%2F369595.png&f=1&nofb=1"
+    },
+    {
+      "name": "test",
+      "hired": "test",
+      "locationId": "3",
+      "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.huffingtonpost.com%2F2016-04-18-1461017575-2008259-new_employees.jpg&f=1&nofb=1",
+      "id": 4
     }
   ],
   "locations": [

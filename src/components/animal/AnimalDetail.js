@@ -20,13 +20,14 @@ const AnimalDetail = props => {
       });
   }, [props.animalId]);
 
-  const handleDelete = () => {
+  const deleteAnimal = () => {
     //invoke the delete function in AnimalManger and re-direct to the animal list.
     setIsLoading(true);
     AnimalManager.delete(props.animalId).then(() =>
       props.history.push("/animals")
     );
   };
+
 
   if (animal.name !== undefined){
     return (
@@ -37,7 +38,7 @@ const AnimalDetail = props => {
           </picture>
           <h3><span style={{ color: 'darkslategrey' }}>{animal.name}</span></h3>
           <p>{animal.breed}</p>
-          <button type="button" disabled={isLoading} onClick={handleDelete}>
+          <button type="button" disabled={isLoading} onClick={deleteAnimal}>
             Discharge
           </button>
         </div>

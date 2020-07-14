@@ -2,6 +2,7 @@ import React, { useState } from "react"
 
 const Login = props => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
+  // const [rememberMe, setRememberMe] = useState()
 
   // Update state whenever an input field is edited
   const handleFieldChange = (evt) => {
@@ -40,6 +41,10 @@ const Login = props => {
             placeholder="Password"
             required="" />
           <label htmlFor="inputPassword">Password</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rememberMe" name="rememberMe" value="rememberMe" />
+          <label htmlfor="rememberMe">Remember Me</label>
         </div>
         <button type="submit">Sign in</button>
       </fieldset>
