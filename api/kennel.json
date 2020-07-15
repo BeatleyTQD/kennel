@@ -1,18 +1,18 @@
 {
   "animals": [
     {
-      "id": 3,
-      "name": "Esmes",
-      "breed": "Pitbull",
-      "picture": "https://images.wagwalkingweb.com/media/articles/care/why-is-my-dog-yawning-and-licking-his-lips/why-is-my-dog-yawning-and-licking-his-lips.jpg",
-      "employeeId": 2
-    },
-    {
-      "id": 4,
+      "id": 1,
       "name": "test",
       "breed": "test",
       "picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.indianaftermarket.com%2Fimages%2Finsert-dog-here%2FIMG_9211%25202.jpg&f=1&nofb=1",
-      "employeeId": 2
+      "employeeId": 1
+    },
+    {
+      "name": "test3",
+      "breed": "tes2",
+      "employeeId": 2,
+      "picture": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.indianaftermarket.com%2Fimages%2Finsert-dog-here%2FIMG_9211%25202.jpg&f=1&nofb=1",
+      "id": 2
     }
   ],
   "employees": [
@@ -36,13 +36,6 @@
       "hired": "2014",
       "locationId": 3,
       "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpictures.fanart-central.net%2Ft%2FTails2085%2F369595.png&f=1&nofb=1"
-    },
-    {
-      "name": "test",
-      "hired": "test",
-      "locationId": "3",
-      "picture": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.huffingtonpost.com%2F2016-04-18-1461017575-2008259-new_employees.jpg&f=1&nofb=1",
-      "id": 4
     }
   ],
   "locations": [

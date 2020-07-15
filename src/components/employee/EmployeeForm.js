@@ -13,6 +13,11 @@ const EmployeeForm = props => {
         setEmployee(stateToChange);
     };
 
+    const handleLocationFieldChange = evt => {
+        const stateToChange = { ...employee };
+        stateToChange[evt.target.id] = parseInt(evt.target.value);
+        setEmployee(stateToChange);
+    };
     LocationManager.getAll().then(locations => {
         setLocations(locations)});
 
@@ -52,8 +57,8 @@ const EmployeeForm = props => {
                             className="form-control"
                             id="locationId"
                             value={parseInt(employee.locationId)}
-                            onChange={handleFieldChange}
-                            >
+                            onChange={handleLocationFieldChange}
+                            > <option>Select a Location</option>
                                 {locations.map(location =>
                                     <option key={location.id} value={location.id}>
                                         {location.name}
